@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "latoblack";
+  src: url(../../fonts/lato-black-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoregular";
+  src: url(../../fonts/lato-regular-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cardContainer {
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.blogImg {
+  border-radius: 15px;
+  max-width: 40%;
+  box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.78);
+}
+
+.text {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.text p {
+  margin-bottom: 2rem;
+  font-family: "latoregular", sans-serif;
+  color: #5f0f40;
+}
+
+.title {
+  color: #2e294e;
+  font-family: "latoblack", sans-serif;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.cardContainer span {
+  justify-self: flex-end;
+  margin-bottom: 0.2rem;
+  display: block;
+  font-family: "latoregular", sans-serif;
+  color: #2e294e;
+}
+
+.cardContainer span:last-of-type {
+  margin-bottom: 0;
+}
+
+.button {
+  border: solid 2px #2e294e;
+  color: #2e294e;
+  background-color: transparent;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 1rem 1.3rem;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  font-family: "latoregular", sans-serif;
+}
+
+.button:hover {
+  background-color: #2e294e;
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .cardContainer {
+    padding: 1.5rem;
+  }
+
+  .blogImg {
+    max-width: 35%;
+  }
+
+  .text {
+    margin-left: 1.5rem;
+  }
+
+  .text p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+  }
+
+  .cardContainer span {
+    font-size: 0.9rem;
+  }
+}

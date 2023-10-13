@@ -1,0 +1,52 @@
+:root {
+  --dark-washed-purple: #834a6b;
+  --dark-pink: #b53e6d;
+  --beige-pink: #fbf1ed;
+  --skin: #eeb5a5;
+  --dark-washed-gray: #303030;
+}
+
+@font-face {
+  font-family: "latoblack";
+  src: url(../../fonts/lato-black-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.eventsContainer {
+  padding: 20rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.eventsContainer h1 {
+  font-family: "latoblack", sans-serif;
+  text-align: right;
+  font-size: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #2e294e;
+}
+
+@media (max-width: 1600px) {
+  .eventsContainer {
+    padding: 15rem 0;
+    gap: 1rem;
+  }
+
+  .eventsContainer h1 {
+    font-size: 3rem;
+  }
+}

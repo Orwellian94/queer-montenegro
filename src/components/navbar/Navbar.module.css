@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "latoregular";
+  src: url(../../fonts/lato-regular-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --dark-washed-purple: #a4658a;
+  --dark-pink: #b53e6d;
+  --beige-pink: #fbf1ed;
+  --skin: #eeb5a5;
+  --dark-washed-gray: #303030;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbarContainer {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  z-index: 200;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 10%;
+  backdrop-filter: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navlink {
+  font-family: "latoregular", sans-serif;
+  position: relative;
+  height: 100%;
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #5f0f40;
+  transition: color 0.5s ease-in-out;
+  border: none;
+}
+
+.navlink:hover {
+  color: #5f0f4090;
+}
+
+/* 
+.navlink::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  left: 50%;
+  bottom: -1rem;
+  background-color: #5f0f40;
+  transition: all ease-in-out 0.3s;
+}
+
+.navlink:hover::after {
+  width: 100%;
+  left: 0;
+} */
+
+.navbar img {
+  max-width: 9rem;
+  object-fit: contain;
+}
+
+.navlinkLogo {
+  cursor: pointer;
+}
+
+.dropdownContent {
+  position: absolute;
+  padding: 0 16px 12px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 8rem;
+  background-color: white;
+  box-shadow: -2px 8px 14px -8px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: -2px 8px 14px -8px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -2px 8px 14px -8px rgba(0, 0, 0, 0.19);
+}
+
+.dropdownLink {
+  text-decoration: none;
+  color: #5f0f40;
+  font-family: "latoregular", sans-serif;
+  margin-top: 0.4rem;
+  transition: all 0.5s ease-in-out;
+  margin-left: 0.2rem;
+}
+
+.dropdownLink:hover {
+  color: #5f0f4090;
+}
+
+.dropdownContent.animated {
+  animation: fadeIn 1s ease;
+  z-index: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1600px) {
+  .navbar {
+    padding: 1rem 10%;
+  }
+
+  .navlink {
+    font-size: 0.9rem;
+    margin: 0 1.2rem;
+  }
+
+  .navbar img {
+    max-width: 6rem;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "latoblack";
+  src: url(../../fonts/lato-black-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoregular";
+  src: url(../../fonts/lato-regular-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoitalic";
+  src: url(../../fonts/lato-italic-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-italic-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contactContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20rem 20rem;
+}
+
+.contactText {
+  z-index: 100;
+}
+
+.contactText h1 {
+  font-size: 5rem;
+  color: #2e294e;
+  font-family: "latoblack", sans-serif;
+  z-index: 10;
+}
+
+.contactText p {
+  font-size: 1.4rem;
+  font-family: "latoiatlic", sans-serif;
+  margin-top: 1rem;
+  color: #600f40;
+}
+
+.contactImg {
+  position: absolute;
+  bottom: 20%;
+}
+
+.button {
+  border: solid 2px #2e294e;
+  color: #2e294e;
+  background-color: transparent;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 1rem 1.3rem;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  font-family: "latoregular", sans-serif;
+}
+
+.button:hover {
+  background-color: #2e294e;
+  color: #fff;
+}
+
+@media (max-width: 1600px) {
+  .contactContainer {
+    padding: 10rem 20rem 15rem 20rem;
+  }
+
+  .contactText h1 {
+    font-size: 3rem;
+  }
+
+  .contactText p {
+    font-size: 1rem;
+  }
+
+  .contactImg {
+    left: 30%;
+    bottom: 30%;
+  }
+
+  .contactImg img {
+    width: 60%;
+  }
+
+  .button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.1rem;
+  }
+}

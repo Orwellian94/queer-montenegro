@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "latoblack";
+  src: url(../../fonts/lato-black-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoregular";
+  src: url(../../fonts/lato-regular-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latobold";
+  src: url(../../fonts/lato-bold-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latolight";
+  src: url(../../fonts/lato-light-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --dark-washed-purple: #834a6b;
+  --dark-pink: #b53e6d;
+  --beige-pink: #fbf1ed;
+  --skin: #eeb5a5;
+  --dark-washed-gray: #303030;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.heroPng {
+  width: 35rem;
+}
+.heroText {
+  margin-left: 7rem;
+  width: 50%;
+}
+
+.heroText h1 {
+  font-size: 5rem;
+  color: #2e294e;
+  padding: 0;
+  margin-bottom: 1rem;
+  font-family: "latoblack", sans-serif;
+}
+
+.heroText p {
+  color: #5f0f40;
+  font-size: 1.4rem;
+  font-family: "latolight", sans-serif;
+}
+
+.heroText p span {
+  font-family: "latobold", sans-serif;
+}
+
+.button {
+  border: solid 2px #2e294e;
+  color: #2e294e;
+  background-color: transparent;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 1rem 1.3rem;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  font-family: "latoregular", sans-serif;
+}
+
+.button:hover {
+  background-color: #2e294e;
+  color: #fff;
+}
+
+.arrowPng {
+  margin-top: -10rem;
+  width: 100%;
+}
+
+.arrowPng img {
+  width: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+  .heroPng {
+    width: 25rem;
+  }
+  .heroText {
+    margin-left: 5rem;
+  }
+
+  .heroText h1 {
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .heroText p {
+    font-size: 1rem;
+  }
+
+  .button {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 0.8rem 1.1rem;
+  }
+
+  .arrowPng {
+    margin-top: -5rem;
+  }
+
+  .arrowPng img {
+    width: 2rem;
+  }
+}

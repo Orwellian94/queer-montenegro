@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "latobold";
+  src: url(../../fonts/lato-bold-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoregular";
+  src: url(../../fonts/lato-regular-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoblack";
+  src: url(../../fonts/lato-black-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-black-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latolight";
+  src: url(../../fonts/lato-light-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.resourcesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 20rem;
+  margin: 0 auto;
+  background-color: #2e294e;
+  overflow: hidden;
+}
+
+.resourcesText {
+  color: #fff;
+  max-width: 50%;
+}
+
+.resourcesText h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-family: "latoblack", sans-serif;
+}
+
+.resourcesText p {
+  font-size: 1.4rem;
+  font-family: "latolight", sans-serif;
+}
+
+.resourcesText p span {
+  font-family: "latoblack", sans-serif;
+}
+
+.resourcesLinks {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12rem;
+}
+
+.resourcesLinks a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "latoregular", sans-serif;
+  padding: 1rem 0;
+}
+
+.heartPng {
+  margin-top: 4rem;
+}
+
+.heartPng img {
+  width: 100%;
+}
+
+@media (max-width: 1600px) {
+  .resourcesContainer {
+    padding: 10rem 15rem;
+  }
+
+  .resourcesText h1 {
+    font-size: 3rem;
+    margin-bottom: 0.6rem;
+  }
+  .resourcesText p {
+    font-size: 1rem;
+  }
+
+  .resourcesLinks {
+    margin-left: 8rem;
+  }
+
+  .resourcesLinks a {
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+
+  .heartPng {
+    margin-top: 2rem;
+  }
+}

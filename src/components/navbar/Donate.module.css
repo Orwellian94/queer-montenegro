@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "latoregular";
+  src: url(../../fonts/lato-regular-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latobold";
+  src: url(../../fonts/lato-bold-webfont.woff2) format("woff2"),
+    url(../../fonts/lato-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.donate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #5f0f40;
+  padding: 0.8rem 1.2rem;
+  border-radius: 15px;
+  border: solid 2px #5f0f40;
+  transition: all 0.8s ease-in-out;
+  font-family: "latobold", sans-serif;
+}
+
+.donate span {
+  letter-spacing: 0.2rem;
+}
+
+.donate:hover {
+  color: #f6fff8;
+  background-color: #5f0f40;
+}
+
+.heart {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+@media (max-width: 1600px) {
+  .donate {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    border-radius: 15px;
+  }
+
+  .donate span {
+    letter-spacing: 0.1rem;
+  }
+
+  .heart {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+}
